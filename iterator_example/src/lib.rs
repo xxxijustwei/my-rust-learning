@@ -21,7 +21,7 @@ impl Clothes {
 
 
 pub struct Counter {
-    count: i32
+    count: u32
 }
 
 impl Counter {
@@ -31,7 +31,7 @@ impl Counter {
 }
 
 impl Iterator for Counter {
-    type Item = i32;
+    type Item = u32;
 
     fn next(&mut self) -> Option<Self::Item> {
         if self.count < 5 {

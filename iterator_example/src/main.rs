@@ -32,7 +32,7 @@ mod test {
             .zip(Counter::new().skip(1))
             .map(|(a, b)| a * b)
             .filter(|value| value % 3 == 0)
-            .sum();
+            .sum::<u32>();
 
         assert_eq!(18, result);
     }
